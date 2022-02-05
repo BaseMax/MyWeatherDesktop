@@ -1,3 +1,22 @@
+# Weather Desktop Application
+
+A **Electron** based desktop application which can show **weather** of most cities in world.
+
+### Powered by
+
+- JavaScript
+- Electron
+- CSS + Library??
+
+## Authors
+
+- Muhab
+- Max Base
+
+© Copyright 2021
+
+----------
+
 <img src=".erb/img/erb-banner.svg" width="100%" />
 
 <br>
