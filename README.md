@@ -1,11 +1,14 @@
 # Weather Desktop Application
 
+![Weather Desktop Application](demo.png)
+
 A **Electron** based desktop application which can show **weather** of most cities in world.
 
 ### Powered by
 
-- JavaScript
+- TypeScript (not JavaScript)
 - Electron
+- ReactJS
 - CSS + Library??
 
 ## Authors
