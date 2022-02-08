@@ -1,0 +1,97 @@
+.weather__forcast {
+  /* ff 3.6+ */
+  background:-moz-radial-gradient(circle at 32% 33%, rgba(166, 179, 181, 1) 0%, rgba(117, 136, 143, 1) 62%, rgba(79, 89, 90, 1) 100%);
+
+  /* safari 5.1+,chrome 10+ */
+  background:-webkit-radial-gradient(circle at 32% 33%, rgba(166, 179, 181, 1) 0%, rgba(117, 136, 143, 1) 62%, rgba(79, 89, 90, 1) 100%);
+
+  /* opera 11.10+ */
+  background:-o-radial-gradient(circle at 32% 33%, rgba(166, 179, 181, 1) 0%, rgba(117, 136, 143, 1) 62%, rgba(79, 89, 90, 1) 100%);
+
+  /* ie 10+ */
+  background:-ms-radial-gradient(circle at 32% 33%, rgba(166, 179, 181, 1) 0%, rgba(117, 136, 143, 1) 62%, rgba(79, 89, 90, 1) 100%);
+
+  /* global 92%+ browsers support */
+  background:radial-gradient(circle at 32% 33%, rgba(166, 179, 181, 1) 0%, rgba(117, 136, 143, 1) 62%, rgba(79, 89, 90, 1) 100%);
+}
+
+.weather__forcast-list {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.weather__forcast-list li:not(:first-child) {
+  border-left: 1px solid;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex:1
+}
+
+.weather__forcast-list-today {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-end;
+  padding-right: 8rem;
+  padding-left:2rem
+}
+.weather__forcast-list-today-text h3 {
+  font-size: 130px;
+  font-weight: 400;
+  color: white;
+}
+
+.weather__forcast-list-today-text p {
+  background-color: #787d78;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.weather__forcast-list-today-icon svg {
+  font-size: 130px;
+  color: white;
+}
+
+.weather__forcast-list-today-icon p {
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.weather__forcast-list li:not(:first-child) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.weather__forcast-list li:not(:first-child) p:first-child {
+  background-color: #787d78;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 0.2rem 0.7rem;
+}
+
+.weather__forcast-list li:not(:first-child) svg {
+  font-size: 60px;
+  /* color: white; */
+}
+
+.weather__forcast-list li:not(:first-child) p:not(:first-child) {
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+}

@@ -1,0 +1,50 @@
+.weather__main{
+    width: 100%;
+    height:70vh;
+    
+}
+
+.weather__main-bg {
+    width: 100%;
+    height:70vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../../../assets/images/morning2.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: -2;
+}
+
+.weather__header{
+    display:flex;
+    justify-content:space-between;
+    align-items: flex-start;
+    padding: 3rem 4rem;
+    color: #fff;
+}
+
+.weather__header-title{
+    font-size: 62px;
+    font-weight: 300;
+}
+
+.weather__header-time {
+    display: flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    align-items:flex-end;
+}
+
+.weather__header-time svg {
+    font-size: 4rem;
+    filter:invert(1);
+}
+
+.weather__header-time-text{
+    font-size: 20px;
+    font-weight: 500;
+    line-height:30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
