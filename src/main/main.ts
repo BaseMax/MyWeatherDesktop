@@ -78,6 +78,8 @@ const createWindow = async () => {
     icon: getAssetPath('icon.png'),
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
+      nodeIntegration: true,
+      contextIsolation: false,
     },
   });
 
@@ -102,7 +104,7 @@ const createWindow = async () => {
   menuBuilder.buildMenu();
 
   // Open urls in the user's browser
-  mainWindow.webContents.setWindowOpenHandler(edata => {
+  mainWindow.webContents.setWindowOpenHandler((edata) => {
     shell.openExternal(edata.url);
     return { action: 'deny' };
   });

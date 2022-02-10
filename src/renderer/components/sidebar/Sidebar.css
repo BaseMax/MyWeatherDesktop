@@ -1,0 +1,264 @@
+.weather__nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 20rem;
+  transform: translate(-20rem, 0);
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  /* ff 3.6+ */
+  background: -moz-radial-gradient(
+    circle at 32% 33%,
+    rgba(166, 179, 181, 1) 0%,
+    rgba(117, 136, 143, 1) 62%,
+    rgba(79, 89, 90, 1) 100%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-radial-gradient(
+    circle at 32% 33%,
+    rgba(166, 179, 181, 1) 0%,
+    rgba(117, 136, 143, 1) 62%,
+    rgba(79, 89, 90, 1) 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-radial-gradient(
+    circle at 32% 33%,
+    rgba(166, 179, 181, 1) 0%,
+    rgba(117, 136, 143, 1) 62%,
+    rgba(79, 89, 90, 1) 100%
+  );
+
+  /* ie 10+ */
+  background: -ms-radial-gradient(
+    circle at 32% 33%,
+    rgba(166, 179, 181, 1) 0%,
+    rgba(117, 136, 143, 1) 62%,
+    rgba(79, 89, 90, 1) 100%
+  );
+
+  /* global 92%+ browsers support */
+  background: radial-gradient(
+    circle at 32% 33%,
+    rgba(166, 179, 181, 1) 0%,
+    rgba(117, 136, 143, 1) 62%,
+    rgba(79, 89, 90, 1) 100%
+  );
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: all 0.4s;
+}
+
+.menu-btn {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+}
+.weather__nav-city {
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.weather__nav-city p {
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+
+.Hotbg {
+  background: #2f3640;
+  height: 40px;
+  border-radius: 40px;
+  padding: 10px 0px 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Hotbg:hover > .Hotbg-btn {
+  background: azure;
+  color: black;
+}
+
+.Hotbg-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 00% 50% 50% 0%;
+  background: #2f3640;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  color: azure;
+  cursor: pointer;
+}
+
+.Hotbg-btn > i {
+  font-size-adjust: 30px;
+}
+
+.Hotbg-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: azure;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 240px;
+}
+
+.weather__nav-city-default {
+  padding: 0.5rem 1rem;
+  font-size: 14px;
+  background-color: white;
+  border: 0;
+  border-radius: 40px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.weather__nav-city-default:hover {
+  background: #2f3640;
+  color: white;
+}
+
+.toggle-btn {
+  position: relative;
+  width: 145px;
+  /* height: 74px; */
+  height: 49px;
+  margin: 0 auto;
+  border-radius: 40px;
+  padding: 0.5rem 1rem;
+  line-height: 20px;
+  margin-top: 15rem;
+}
+
+input[type='checkbox'] {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: 0px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+}
+
+#_1st-toggle-btn span {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  overflow: hidden;
+  opacity: 1;
+  background-color: #fff;
+  box-shadow: 0px 2px 25px #d9d9d9;
+  border-radius: 40px;
+  transition: 0.2s ease background-color, 0.2s ease opacity;
+}
+
+#_1st-toggle-btn span:before,
+#_1st-toggle-btn span:after {
+  color: white;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 8px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  transition: 0.5s ease transform, 0.2s ease background-color;
+}
+
+#_1st-toggle-btn span:before {
+  background-color: #fff;
+  transform: translate(-58px, 0px);
+  z-index: 1;
+  content: 'F';
+}
+
+#_1st-toggle-btn span:after {
+  background-color: #000;
+  transform: translate(8px, 0px);
+  z-index: 0;
+  content: 'C';
+}
+
+#_1st-toggle-btn input[type='checkbox']:checked + span {
+  background-color: #000;
+}
+
+#_1st-toggle-btn input[type='checkbox']:active + span {
+  opacity: 0.5;
+}
+
+#_1st-toggle-btn input[type='checkbox']:checked + span:before {
+  background-color: white;
+  color: black;
+  transform: translate(99px, 0px);
+}
+
+#_1st-toggle-btn input[type='checkbox']:checked + span:after {
+  content: '';
+}
+
+.show {
+  transform: translate(0, 0);
+}
+
+.Hotbg-txtt input {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: azure;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 240px;
+  padding-right: 2rem;
+}
+
+.Hotbg-txtt .geoapify-autocomplete-items {
+  margin-top: 2rem;
+  background: #2f3640;
+  color: white;
+}
+.Hotbg-txtt .secondary-part {
+  color: white !important;
+  font-weight: bolder;
+}
+.Hotbg-txtt .geoapify-close-button {
+  margin-top: 1rem !important;
+  color: white;
+  z-index: 40;
+}
+.Hotbg-txtt .geoapify-close-button:hover {
+  color: white;
+}
+
+.Hotbg-txtt .geoapify-autocomplete-item svg {
+  padding-right: 2rem;
+}

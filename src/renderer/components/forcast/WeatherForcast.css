@@ -1,18 +1,43 @@
 .weather__forcast {
   /* ff 3.6+ */
-  background:-moz-radial-gradient(circle at 32% 33%, rgba(166, 179, 181, 1) 0%, rgba(117, 136, 143, 1) 62%, rgba(79, 89, 90, 1) 100%);
+  background: -moz-radial-gradient(
+    circle at 32% 33%,
+    rgba(166, 179, 181, 1) 0%,
+    rgba(117, 136, 143, 1) 62%,
+    rgba(79, 89, 90, 1) 100%
+  );
 
   /* safari 5.1+,chrome 10+ */
-  background:-webkit-radial-gradient(circle at 32% 33%, rgba(166, 179, 181, 1) 0%, rgba(117, 136, 143, 1) 62%, rgba(79, 89, 90, 1) 100%);
+  background: -webkit-radial-gradient(
+    circle at 32% 33%,
+    rgba(166, 179, 181, 1) 0%,
+    rgba(117, 136, 143, 1) 62%,
+    rgba(79, 89, 90, 1) 100%
+  );
 
   /* opera 11.10+ */
-  background:-o-radial-gradient(circle at 32% 33%, rgba(166, 179, 181, 1) 0%, rgba(117, 136, 143, 1) 62%, rgba(79, 89, 90, 1) 100%);
+  background: -o-radial-gradient(
+    circle at 32% 33%,
+    rgba(166, 179, 181, 1) 0%,
+    rgba(117, 136, 143, 1) 62%,
+    rgba(79, 89, 90, 1) 100%
+  );
 
   /* ie 10+ */
-  background:-ms-radial-gradient(circle at 32% 33%, rgba(166, 179, 181, 1) 0%, rgba(117, 136, 143, 1) 62%, rgba(79, 89, 90, 1) 100%);
+  background: -ms-radial-gradient(
+    circle at 32% 33%,
+    rgba(166, 179, 181, 1) 0%,
+    rgba(117, 136, 143, 1) 62%,
+    rgba(79, 89, 90, 1) 100%
+  );
 
   /* global 92%+ browsers support */
-  background:radial-gradient(circle at 32% 33%, rgba(166, 179, 181, 1) 0%, rgba(117, 136, 143, 1) 62%, rgba(79, 89, 90, 1) 100%);
+  background: radial-gradient(
+    circle at 32% 33%,
+    rgba(166, 179, 181, 1) 0%,
+    rgba(117, 136, 143, 1) 62%,
+    rgba(79, 89, 90, 1) 100%
+  );
 }
 
 .weather__forcast-list {
@@ -29,7 +54,7 @@
   height: 100%;
   display: flex;
   align-items: center;
-  flex:1
+  flex: 1;
 }
 
 .weather__forcast-list-today {
@@ -38,7 +63,7 @@
   justify-content: center;
   align-items: flex-end;
   padding-right: 8rem;
-  padding-left:2rem
+  padding-left: 2rem;
 }
 .weather__forcast-list-today-text h3 {
   font-size: 130px;
