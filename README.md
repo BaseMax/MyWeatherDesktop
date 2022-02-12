@@ -24,7 +24,7 @@ First install packages
 npm i
 ```
 
-Second Create ./js/Config.ts for API keys in the src folder
+Second Create ./js/Config.ts for API keys in the root folder
 
 ```
 mkdir js
