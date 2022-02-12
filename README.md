@@ -6,10 +6,46 @@ A **Electron** based desktop application which can show **weather** of most citi
 
 ### Powered by
 
-- TypeScript (not JavaScript)
+- TypeScript
 - Electron
 - ReactJS
-- CSS + Library??
+- Plain CSS
+- [React-geocoder-autocomplete]
+- [React-icons]
+- [Axios]
+- [OpenWeather] (For Weather Forcast)
+- [Geoapify] (For Search AutoComplete)
+
+## Installation
+
+First install packages
+
+```sh
+npm i
+```
+
+Second Create ./js/Config.ts for API keys in the src folder
+
+```
+mkdir js
+cd js
+touch config.ts
+```
+
+Then Add and Export keys object inside ./js/config.ts
+
+```
+const keys: { weatherApi: string; autoCompleteApi: string } = {
+  weatherApi: [API_KEY],
+  autoCompleteApi: [API_KEY],
+};
+```
+
+Third run project
+
+```
+npm run start
+```
 
 ## Authors
 
@@ -17,8 +53,13 @@ A **Electron** based desktop application which can show **weather** of most citi
 - Max Base
 
 © Copyright 2021
+[React-geocoder-autocomplete]: <https://www.npmjs.com/package/@geoapify/react-geocoder-autocomplete>
+[React-icons]: <https://react-icons.github.io/react-icons/>
+[Axios]: <https://www.npmjs.com/package/axios>
+[OpenWeather]: <https://openweathermap.org/>
+[Geoapify]: <https://www.npmjs.com/package/@geoapify/geocoder-autocomplete>
 
-----------
+---
 
 <img src=".erb/img/erb-banner.svg" width="100%" />
 
