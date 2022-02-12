@@ -1,12 +1,11 @@
-/* eslint-disable react/button-has-type */
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from 'react';
 import './Sidebar.css';
-import { AiOutlineClose, AiOutlineSearch } from 'react-icons/ai';
+import { AiOutlineClose } from 'react-icons/ai';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { SideBarType } from 'renderer/common/types';
 import Autocomplete from './Autocomplete';
 
-const Sidebar: React.FC = () => {
+const Sidebar: React.FC<SideBarType> = ({ selected, deg }) => {
   const [menuToggle, setMenuToggle] = useState(false);
 
   return (
@@ -26,16 +25,15 @@ const Sidebar: React.FC = () => {
         <div className="weather__nav-city">
           <p>Pick A City</p>
           <div className="Hotbg">
-            <Autocomplete />
-            <a href="#" className="Hotbg-btn">
-              <AiOutlineSearch />
-            </a>
+            <Autocomplete Loc={selected} />
           </div>
-          <button className="weather__nav-city-default">Set As Default</button>
         </div>
-        <div className="toggle-btn" id="_1st-toggle-btn">
-          <input type="checkbox" />
-          <span />
+        <div className="weather__nav-deg">
+          <p>Choose Degree</p>
+          <div className="toggle-btn" id="_1st-toggle-btn">
+            <input type="checkbox" onChange={deg} />
+            <span />
+          </div>
         </div>
       </nav>
     </>

@@ -1,23 +1,10 @@
 import React from 'react';
 import './WeatherForcast.css';
+import { WeatherForcastType } from 'renderer/common/types';
 import { getDay } from '../utils/helpers';
 import Icon from '../Icon';
 
-interface Props {
-  degree: {
-    dt: number;
-    temp: number;
-    wind_speed: number;
-    wind_deg: number;
-    weather: { id: number }[];
-  };
-  weekly: {
-    dt: number;
-    temp: { max: number; min: number };
-    weather: { id: number }[];
-  }[];
-}
-const WeatherForcast: React.FC<Props> = ({ degree, weekly }) => {
+const WeatherForcast: React.FC<WeatherForcastType> = ({ degree, weekly }) => {
   return (
     <div className="weather__forcast">
       <ul className="weather__forcast-list">
