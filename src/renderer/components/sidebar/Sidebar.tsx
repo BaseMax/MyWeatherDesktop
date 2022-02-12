@@ -6,7 +6,7 @@ import { SideBarType } from 'renderer/common/types';
 import Autocomplete from './Autocomplete';
 
 const Sidebar: React.FC<SideBarType> = ({ selected, deg }) => {
-  const [menuToggle, setMenuToggle] = useState(false);
+  const [menuToggle, setMenuToggle] = useState(true);
 
   return (
     <>
