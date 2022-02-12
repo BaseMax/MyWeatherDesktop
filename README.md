@@ -53,11 +53,12 @@ npm run start
 - Max Base
 
 © Copyright 2021
-[React-geocoder-autocomplete]: <https://www.npmjs.com/package/@geoapify/react-geocoder-autocomplete>
-[React-icons]: <https://react-icons.github.io/react-icons/>
-[Axios]: <https://www.npmjs.com/package/axios>
-[OpenWeather]: <https://openweathermap.org/>
-[Geoapify]: <https://www.npmjs.com/package/@geoapify/geocoder-autocomplete>
+
+[react-geocoder-autocomplete]: https://www.npmjs.com/package/@geoapify/react-geocoder-autocomplete
+[react-icons]: https://react-icons.github.io/react-icons/
+[axios]: https://www.npmjs.com/package/axios
+[openweather]: https://openweathermap.org/
+[geoapify]: https://www.npmjs.com/package/@geoapify/geocoder-autocomplete
 
 ---
 
