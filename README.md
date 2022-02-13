@@ -1,4 +1,4 @@
-# Weather Desktop Application
+# MyWeather (Desktop Application)
 
 ![Weather Desktop Application](demo.png)
 
