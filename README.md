@@ -52,7 +52,7 @@ npm run start
 - Muhab
 - Max Base
 
-© Copyright 2021
+© Copyright 2022, Max Base
 
 [react-geocoder-autocomplete]: https://www.npmjs.com/package/@geoapify/react-geocoder-autocomplete
 [react-icons]: https://react-icons.github.io/react-icons/
